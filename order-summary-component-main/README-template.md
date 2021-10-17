@@ -45,6 +45,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+I started with the template file and then started adding HTML to structure the webpage. I added the images in and some div elements to start structuring the page. From there I made a separate stylesheet and started on the body of the page and worked my way in. 
+
+I used the LiveServer extension for VS Code to continuously preview my changes working bit by bit. It's been a while since I made a webpage, so I was definitely taking it slow
+and looking up references as I built the page.
+
 ### Built with
 
 - Semantic HTML5 markup
