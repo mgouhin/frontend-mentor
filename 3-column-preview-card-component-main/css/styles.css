@@ -1,0 +1,141 @@
+/* Trying to use BEM method for the first time*/
+
+* {
+  box-sizing: border-box;
+  margin: 0rem;
+}
+
+:root {
+  /* Define variables for project */
+  --title-font: 'Big Shoulders Display';
+  --main-font: 'Lexend Deca';
+
+  --primary-bright-orange: hsl(31, 77%, 52%);
+  --primary-dark-cyan: hsl(184, 100%, 22%);
+  --primary-very-dark-cyan: hsl(179, 100%, 13%);
+  --neutral-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --neutral-very-light-grey: hsl(0, 0%, 95%);
+
+  /* Define standards */
+  font-family: sans-serif; /* when custom isn't available */
+  font-size: 15px;
+}
+
+body {
+  background-color: var(--neutral-very-light-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.category-card {
+  width: 275px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 4.1rem;
+}
+
+.category-card--bright-orange {
+  background-color: var(--primary-bright-orange);
+  grid-row: 1 / span 1;
+}
+
+.category-card--dark-cyan {
+  background-color: var(--primary-dark-cyan);
+  grid-row: 2 / span 1;
+}
+
+.category-card--very-dark-cyan {
+  background-color: var(--primary-very-dark-cyan);
+  grid-row-start: 3 / span 1;
+}
+
+.category-card:first-child {
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.category-card:last-child {
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+
+.category-card__icon {
+  margin-bottom: 1.8rem;
+}
+
+.category-card__title {
+  margin-bottom: 2rem;
+  font-family: var(--title-font);
+  font-size: 3.0rem;
+  color: var(--neutral-very-light-grey);
+}
+
+.category-card__body {
+  margin-bottom: 2rem;
+  font-family: var(--main-font);
+  color: var(--neutral-transparent-white);
+}
+
+.category-card__button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--neutral-very-light-grey);
+  border-radius: 15%/50%;
+  font-family: var(--main-font);
+  font-size: 1rem;
+  color: hsl(0, 0%, 0%);
+  mix-blend-mode: screen; 
+  /* ^ new technique for transparent text never
+     tried or have seen this yet */
+  text-align: center;
+  text-decoration: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1400px) {
+
+  .category-container {
+    padding-top: 25vh;
+  }
+  .category-card--bright-orange {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+  }
+  
+  .category-card--dark-cyan {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+  }
+  
+  .category-card--very-dark-cyan {
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+  }
+
+  .category-card:first-child {
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+  }
+
+  .category-card:last-child {
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+  }
+}

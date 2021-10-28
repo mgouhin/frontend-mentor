@@ -7,53 +7,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+  <!-- custom font imports-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+    rel="stylesheet">
 
   <title>Frontend Mentor | 3-column preview card component</title>
 
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
+
   <div class="category-container">
-    <div class="category-card">
-      <img src="./images/icon-sedans.svg" alt="Sedans">
+
+    <div class="category-card category-card--bright-orange">
+      <img src="./images/icon-sedans.svg" alt="Sedans" class="category-card__icon">
       <h3 class="category-card__title">Sedans</h3>
       <p class="category-card__body">Choose a sedan for its affordability
         and excellent fuel economy. Ideal for cruising in the city or on your
         next road trip.</p>
-      <a href="#" class="category-card__learn-button">Learn More</a>
+      <a href="#" class="category-card__button">Learn More</a>
     </div>
-    <div class="category-card">
-      <img src="./images/icon-suvs.svg" alt="SUVs">
+
+    <div class="category-card category-card--dark-cyan">
+      <img src="./images/icon-suvs.svg" alt="SUVs" class="category-card__icon">
       <h3 class="category-card__title">SUVs</h3>
       <p class="category-card__body">Take an SUV for its spacious interior,
         power, and versatility. Perfect for your next family vacation and
         off-road adventures.</p>
-      <a href="#" class="category-card__learn-button">Learn More</a>
+      <a href="#" class="category-card__button">Learn More</a>
     </div>
-    <div class="category-card">
-      <img src="./images/icon-luxury.svg" alt="Luxury">
+
+    <div class="category-card category-card--very-dark-cyan">
+      <img src="./images/icon-luxury.svg" alt="Luxury" class="category-card__icon">
       <h3 class="category-card__title">Luxury</h3>
       <p class="category-card__body">Cruise in the best car brands without
         the bloated prices. Enjoy the enhanced comfort of a luxury rental and
         arrive in style.</p>
-      <a href="#" class="category-card__learn-button">Learn More</a>
+      <a href="#" class="category-card__button">Learn More</a>
     </div>
+
   </div>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p>Coded by <a href="https://www.github.com/mgouhin" target="_blank">Michael Gouhin</a>.</p>
   </div>
+
 </body>
 
 </html>
