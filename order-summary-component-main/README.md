@@ -24,7 +24,7 @@ Build out a website that looks the same as the prompt. Use style guides as given
 
 ### Screenshot
 
-![Final Desktop Layout.](/images/screenshot-order-summary-component-main.png)
+![Final Desktop Layout.](./images/screenshot-order-summary-component-main.png)
 
 ### Links
 
@@ -59,9 +59,9 @@ One thing I am proud of with this development is using Netlify. My first time us
 ### Useful resources
 
 - [W3 Schools](https://www.w3schools.com/) - Like a cheat sheet for web development.
-- [MDN Web Docks](hhttps://developer.mozilla.org/en-US/docs/Web) - Great reference for finding out the specifics and workings of HTML, CSS, JS, and more.
+- [MDN Web Docks](https://developer.mozilla.org/en-US/docs/Web) - Great reference for finding out the specifics and workings of HTML, CSS, JS, and more.
 - [VS Code Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) - Let's you set up a local server and get quick feedback on projects without a bunch of hassle.
-- [Netlify] (https://www.netlify.com/) - Easy deploy to a broader audience for your project.
+- [Netlify](https://www.netlify.com/) - Easy deploy to a broader audience for your project.
 
 ## Author
 
