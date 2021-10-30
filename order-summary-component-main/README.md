@@ -43,12 +43,13 @@ and looking up references as I built the page.
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned
 
 This project was more so about getting back up to speed after stepping away for ~8 months. See the continued development section for what I'm focusing on next!
+
+Actually, after submitting my code I saw that I had accessibility issues. I learned about HTML landmark elements such as `<header>, <nav>, <main>, <section>, <aside>, <footer>`. I updated my project with those replacing some of my `<div>` elements. 
 
 ### Continued development
 
