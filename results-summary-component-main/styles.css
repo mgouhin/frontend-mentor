@@ -5,8 +5,8 @@
   --clr-primary-teal: hsl(166, 100%, 37%);
   --clr-primary-blue: hsl(234, 85%, 45%);
 
-  --clr-grad-primary: linear-gradient(to top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  --clr-grad-secondary: linear-gradient(to top, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  --clr-grad-primary: to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%);
+  --clr-grad-secondary: to top, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0);
 
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-neutral-200: hsl(221, 100%, 96%);
@@ -158,11 +158,11 @@ select {
 }
 
 .bg-grad-primary {
-  background-color: var(--clr-grad-primary);
+  background-image: linear-gradient(var(--clr-grad-primary));
 }
 
 .bg-grad-secondary {
-  background-color: var(--clr-grad-secondary);
+  background-image: linear-gradient(var(--clr-grad-secondary));
 }
 
 .fw-medium {
