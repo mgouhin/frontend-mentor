@@ -5,6 +5,11 @@
   --clr-primary-teal: hsl(166, 100%, 37%);
   --clr-primary-blue: hsl(234, 85%, 45%);
 
+  --clr-primary-red-light: hsla(0, 100%, 67%, 0.2);
+  --clr-primary-orange-light: hsla(39, 100%, 56%, 0.2);
+  --clr-primary-teal-light: hsla(166, 100%, 37%, 0.2);
+  --clr-primary-blue-light: hsla(234, 85%, 45%, 0.2);
+
   --clr-grad-primary: to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%);
   --clr-grad-secondary: to top, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0);
 
@@ -165,6 +170,22 @@ select {
   background-image: linear-gradient(var(--clr-grad-secondary));
 }
 
+.bg-primary-red-light {
+  background-color: var(--clr-primary-red-light);
+}
+
+.bg-primary-orange-light {
+  background-color: var(--clr-primary-orange-light);
+}
+
+.bg-primary-teal-light {
+  background-color: var(--clr-primary-teal-light);
+}
+
+.bg-primary-blue-light {
+  background-color: var(--clr-primary-blue-light);
+}
+
 .fw-medium {
   font-weight: var(--fw-medium);
 }
@@ -205,6 +226,21 @@ select {
   font-size: var(--fs-800);
 }
 
+.txt-center {
+  text-align: center;
+}
+
+.float-left {
+  float: left;
+}
+
+.flx-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 /* components */
 html {
   font-family: var(--ff-body);
@@ -220,4 +256,63 @@ h6,
 p {
   font-size: var(--fs-body);
   font-weight: var(--fw-medium);
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.circle {
+  padding: 0.75rem;
+  width: max-content;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.horizontal-container>* {
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+.horizontal-container>*:last-child {
+  float: right;
+  padding-right: 1rem;
+}
+
+/* macro layout */
+main {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  max-width: 450px;
+  overflow: hidden;
+}
+
+.card:first-child {
+  border-radius: 0 0 20px 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .wrapper {
+    flex-direction: row;
+    border-radius: 20px;
+  }
+
+  .card {
+    max-width: 375px;
+  }
+
+  .card:first-child {
+    border-radius: 20px;
+  }
 }
