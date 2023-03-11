@@ -186,6 +186,14 @@ select {
   background-color: var(--clr-primary-blue-light);
 }
 
+.bg-neutral-100 {
+  background-color: var(--clr-neutral-100);
+}
+
+.bg-neutral-200 {
+  background-color: var(--clr-neutral-200);
+}
+
 .fw-medium {
   font-weight: var(--fw-medium);
 }
@@ -261,6 +269,8 @@ p {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .circle {
@@ -270,32 +280,62 @@ ol {
   border-radius: 50%;
 }
 
-.horizontal-container>* {
-  display: inline-block;
-  padding-left: 1rem;
+.horizontal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 15px;
 }
 
 .horizontal-container>*:last-child {
-  float: right;
-  padding-right: 1rem;
+  text-align: left;
+  margin-left: auto;
 }
 
 /* macro layout */
 main {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  /* align-items: center; */
-  height: 100vh;
+  align-items: flex-start; */
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
+  border-radius: 0 0 20px 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .wrapper {
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    height: min-content;
+  }
 }
 
 .card {
-  max-width: 450px;
-  overflow: hidden;
+  /* max-width: 315px; */
+  /* height: max-content; */
+  padding: 1.85rem;
+}
+
+@media screen and (min-width: 800px) {
+  .card {
+    padding: 2.75rem;
+  }
 }
 
 .card:first-child {
@@ -303,16 +343,27 @@ main {
 }
 
 @media screen and (min-width: 800px) {
-  .wrapper {
-    flex-direction: row;
-    border-radius: 20px;
-  }
-
-  .card {
-    max-width: 375px;
-  }
-
   .card:first-child {
     border-radius: 20px;
+  }
+}
+
+/* .card>*:not(:first-child) {
+  margin-block-start: 1.63rem;
+}
+
+@media screen and (min-width: 800px) {
+  .card>*:not(:first-child) {
+    margin-block-start: 2.56rem;
+  }
+} */
+
+.card>* {
+  max-width: 315px;
+}
+
+@media screen and (min-width: 800px) {
+  .card>* {
+    max-width: 287px;
   }
 }
