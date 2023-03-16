@@ -31,49 +31,51 @@
 
 <body>
   <main>
-    <div class="center full-vp txt-center">
-      <div class="flex">
-        <section class="card">
+    <div class="center">
+      <div class="flex wrapper">
+        <section class="card top-card clr-neutral-300 bg-grad-primary">
           <h1 class="typ-display-400">Your Result</h1>
-          <div class="circle">
-            <p class="typ-display-100">76</p>
+          <div class="circle bg-grad-secondary">
+            <p class="typ-display-100 clr-neutral-100">76</p>
             <p class="typ-body-400">of 100</p>
           </div>
-          <h3 class="typ-display-450">Great</h3>
-          <p class="typ-body-400">You scored higher than 65% of the people who have taken these tests.</p>
+          <div class="grid">
+            <h3 class="typ-display-450 clr-neutral-100">Great</h3>
+            <p class="typ-body-400">You scored higher than 65% of the people who have taken these tests.</p>
+          </div>
         </section>
-        <section class="card txt-left">
-          <h2 class="typ-display-400">Summary</h2>
-          <ul class="typ-body-300">
-            <li class="score-component">
+        <section class="card">
+          <h2 class="txt-left typ-display-400 clr-neutral-700">Summary</h2>
+          <div class="typ-body-300 grid">
+            <div class="score-component bg-primary-red-light">
               <div class="icon-title">
                 <img src="./assets/images/icon-reaction.svg">
-                <h3>Reaction</h3>
+                <h3 class="clr-primary-red">Reaction</h3>
               </div>
               <p><span class="typ-body-400">80</span> / 100</p>
-            </li>
-            <li class="score-component">
+            </div>
+            <div class="score-component bg-primary-orange-light">
               <div class="icon-title">
                 <img src="./assets/images/icon-memory.svg">
-                <h3>Memory</h3>
+                <h3 class="clr-primary-orange">Memory</h3>
               </div>
               <p><span class="typ-body-400">92</span> / 100</p>
-            </li>
-            <li class="score-component">
+            </div>
+            <div class="score-component bg-primary-teal-light">
               <div class="icon-title">
                 <img src="./assets/images/icon-verbal.svg">
-                <h3>Verbal</h3>
+                <h3 class="clr-primary-teal">Verbal</h3>
               </div>
               <p><span class="typ-body-400">61</span> / 100</p>
-            </li>
-            <li class="score-component">
+            </div>
+            <div class="score-component bg-primary-blue-light">
               <div class="icon-title">
                 <img src="./assets/images/icon-visual.svg">
-                <h3>Visual</h3>
+                <h3 class="clr-primary-blue">Visual</h3>
               </div>
               <p><span class="typ-body-400">72</span> / 100</p>
-            </li>
-          </ul>
+            </div>
+          </div>
           <button class="btn typ-display-350">Continue</button>
         </section>
       </div>
