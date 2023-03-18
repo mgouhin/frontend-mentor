@@ -21,6 +21,8 @@
     .attribution {
       font-size: 11px;
       text-align: center;
+      display: grid;
+      place-content: center;
     }
 
     .attribution a {
@@ -33,20 +35,29 @@
   <main>
     <div class="center">
       <div class="wrapper">
-        <section class="card result-card typ-body-400">
-          <h1 class="typ-display-400">Your Result</h1>
+
+        <section class="card result-card fs-400 fw-med">
+
+          <h1 class="fs-600 fw-bold">Your Result</h1>
+
           <div class="score-badge">
-            <p class="typ-display-100 clr-neutral-100">76</p>
+            <p class="fs-800 fw-bold clr-neutral-100">76</p>
             <p class="">of 100</p>
           </div>
+
           <div class="grid">
-            <h3 class="typ-display-450 clr-neutral-100">Great</h3>
+            <h3 class="fs-700 fw-extra-bold clr-neutral-100">Great</h3>
             <p class="">You scored higher than 65% of the people who have taken these tests.</p>
           </div>
+
         </section>
-        <section class="card typ-body-400 clr-neutral-700">
-          <h2 class="txt-left typ-display-400">Summary</h2>
+
+        <section class="card fs-400 fw-med clr-neutral-700">
+
+          <h2 class="txt-left fs-600 fw-bold">Summary</h2>
+
           <div class="grid clr-neutral-700-light">
+
             <div class="score-component bg-primary-red-light">
               <div class="icon-title">
                 <img src="./assets/images/icon-reaction.svg">
@@ -54,6 +65,7 @@
               </div>
               <p class="fw-bold"><span class="fw-extra-bold clr-neutral-700">80</span> / 100</p>
             </div>
+
             <div class="score-component bg-primary-orange-light">
               <div class="icon-title">
                 <img src="./assets/images/icon-memory.svg">
@@ -61,6 +73,7 @@
               </div>
               <p class="fw-bold"><span class="fw-extra-bold clr-neutral-700">92</span> / 100</p>
             </div>
+
             <div class="score-component bg-primary-teal-light">
               <div class="icon-title">
                 <img src="./assets/images/icon-verbal.svg">
@@ -68,6 +81,7 @@
               </div>
               <p class="fw-bold"><span class="fw-extra-bold clr-neutral-700">61</span> / 100</p>
             </div>
+
             <div class="score-component bg-primary-blue-light">
               <div class="icon-title">
                 <img src="./assets/images/icon-visual.svg">
@@ -75,16 +89,20 @@
               </div>
               <p class="fw-bold"><span class="fw-extra-bold clr-neutral-700">72</span> / 100</p>
             </div>
+
           </div>
+
           <button class="btn">Continue</button>
+
         </section>
+
       </div>
     </div>
   </main>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p>Coded by <a href="https://github.com/mgouhin">mgouhin</a>.</p>
   </div>
 </body>
 
