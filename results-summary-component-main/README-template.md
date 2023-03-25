@@ -27,20 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/mgouhin/frontend-mentor/tree/master/results-summary-component-main](https://github.com/mgouhin/frontend-mentor/tree/master/results-summary-component-main)
+- Live Site URL: [https://mgouhin-fem.netlify.app/results-summary-component-main/index.html](https://mgouhin-fem.netlify.app/results-summary-component-main/index.html)
 
 ## My process
 
@@ -51,59 +43,47 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+It may sound simple and silly, but I learned about typography inheritance on this project. Specifically how font size, weight, and color are inherited by children elements and how it's important to utilize this to save yourself work. I picked this up from [Kevin Powell](https://www.kevinpowell.co/) and tried to use it in a few places that made sense.
 
-To see how you can add code snippets, see below:
+One instance of it was applying a neutral font color `clr-neutral-700` to the `<section>` element in the summary card. This reduced some of the work for reapplying it on sub-components.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+<section class="card clr-neutral-700">
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+          <h2 class="txt-left fs-600 fw-bold">Summary</h2>
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+          <div class="grid clr-neutral-700-light">
+
+            <div class="score-component bg-primary-red-light">
+              <div class="icon-title">
+                <img src="./assets/images/icon-reaction.svg">
+                <h3 class="clr-primary-red">Reaction</h3>
+              </div>
+              <p class="fw-bold"><span class="fw-extra-bold clr-neutral-700">80</span> / 100</p>
+            </div>
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I'd like to work further on my CSS Flexbox and Grid utilization. Visually laying out the components, getting appropriate spacing, and choosing containers had its challenging moments for me. I also suspect I'm not using their properties to my full advantage or efficiently. Rather I'm sticking together their basic functions to get what I want. 
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Another goal would be to improve my overall CSS structure. Learning how to balance getting the work done with designing for adaptability and/or scaling. Designing for a single page item versus designing for an entire application seem to have different goals. Learning how to structure my CSS so it can be modified or expanded easily seems like a valuable skill.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+Definitely utilized some of the big names for reference on this project.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [W3 Schools](https://www.example.com) - Great reference for summarized ideas/concepts of HTML, CSS, JS, and more. I used it quite a bit for quick recall items.
+- [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/CSS) - Great resource for explaining how aspects of HTML, CSS, and JS work. Well put together and organized coherently for easy use and learning. I relied on this for getting CSS grid to behave for me.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Frontend Mentor - [@mgouhin](https://www.frontendmentor.io/profile/mgouhin)
+- GitHub - [@mgouhin](https://github.com/mgouhin)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Special thanks to [Kevin Powell](https://www.kevinpowell.co/) for his [solution](https://www.youtube.com/watch?v=KqFAs5d3Yl8&t=1136s). I was nearing the close of this project when he released his video. I really enjoyed it and it gave me the motivation to cross the finish line.
