@@ -76,7 +76,7 @@ Another goal would be to improve my overall CSS structure. Learning how to balan
 
 Definitely utilized some of the big names for reference on this project.
 
-- [W3 Schools](https://www.example.com) - Great reference for summarized ideas/concepts of HTML, CSS, JS, and more. I used it quite a bit for quick recall items.
+- [W3 Schools](https://www.w3schools.com/css/default.asp) - Great reference for summarized ideas/concepts of HTML, CSS, JS, and more. I used it quite a bit for quick recall items.
 - [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/CSS) - Great resource for explaining how aspects of HTML, CSS, and JS work. Well put together and organized coherently for easy use and learning. I relied on this for getting CSS grid to behave for me.
 
 ## Author
@@ -86,4 +86,4 @@ Definitely utilized some of the big names for reference on this project.
 
 ## Acknowledgments
 
-Special thanks to [Kevin Powell](https://www.kevinpowell.co/) for his [solution](https://www.youtube.com/watch?v=KqFAs5d3Yl8&t=1136s). I was nearing the close of this project when he released his video. I really enjoyed it and it gave me the motivation to cross the finish line.
+Special thanks to [Kevin Powell](https://www.kevinpowell.co/) for his [solution](https://www.youtube.com/watch?v=KqFAs5d3Yl8). I was nearing the close of this project when he released his video. I really enjoyed it and it gave me the motivation to cross the finish line.
